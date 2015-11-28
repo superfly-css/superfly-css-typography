@@ -1,0 +1,75 @@
+/*
+ * Copyright 2015-2016 Firefly Semantics Corporation
+ * Copyright 2015-2016 Ole Ersoy
+ * Copyright 2015-2016 superfly-css
+ * Copyright 2011-2015 Twitter, Inc.
+ */
+
+/*! superfly-css-foundation | MIT License | https://github.com/superfly-css/superfly-css-colors/blob/master/LICENSE.md */
+/*! bootstrap v4.0.0-alpha | MIT License | https://github.com/twbs/bootstrap/blob/master/LICENSE */
+
+/*
+=======================================
+ TYPOGRAPHY
+=======================================
+ 1:  Import superfly-css-variables-colors
+ 1:  Import superfly-css-variables-sizes
+ 2:  Define module variables
+ 3:  Style heading elements and classes
+================================
+*/
+
+/* 0 */
+@import superfly-css-variables-colors;
+
+/* 1 */
+@import superfly-css-variables-sizes;
+
+/* 2 */
+:root {
+  --headings-color: inherit;
+  --headings-sm-color: var(--color-gray-light);
+  --headings-margin-bottom: calc( var(--spacer) / 2 );
+  --headings-font-family: inherit;
+  --headings-font-weight: 500;
+  --headings-line-height: 1.1;
+  --headings-color: inherit;
+
+  --font-size-h1: var(--font-size-800);
+  --font-size-h2: var(--font-size-700);
+  --font-size-h3: var(--font-size-600);
+  --font-size-h4: var(--font-size-500);
+  --font-size-h5: var(--font-size-400);
+  --font-size-h6: var(--font-size-300);
+
+  --lead-font-size: var(--font-size-400);
+  --lead-font-weight: 300;
+}
+
+/* 3 */
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-bottom: var(--headings-margin-bottom);
+  font-family: var(--headings-font-family);
+  font-weight: var(--headings-font-weight);
+  line-height: var(--headings-line-height);
+  color: var(--headings-color);
+}
+
+h1 { font-size: var(--font-size-h1); }
+h2 { font-size: var(--font-size-h2); }
+h3 { font-size: var(--font-size-h3); }
+h4 { font-size: var(--font-size-h4); }
+h5 { font-size: var(--font-size-h5); }
+h6 { font-size: var(--font-size-h6); }
+
+/*
+These declarations are kept separate from and placed after
+the previous tag-based declarations.  This way the CSS cascade works.
+For example <h1 class="h2"> will be styled like an h2.*/
+.h1 { font-size: var(--font-size-h1); }
+.h2 { font-size: var(--font-size-h2); }
+.h3 { font-size: var(--font-size-h3); }
+.h4 { font-size: var(--font-size-h4); }
+.h5 { font-size: var(--font-size-h5); }
+.h6 { font-size: var(--font-size-h6); }
