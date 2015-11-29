@@ -16,7 +16,9 @@
  1:  Import superfly-css-variables-sizes
  2:  Define module variables
  3:  Style heading elements and classes
- 4:
+ 4:  hr element styling
+ 5:  small element and class styling
+ 6:  mark element and class styling
 ================================
 */
 
@@ -74,3 +76,30 @@ For example <h1 class="h2"> will be styled like an h2.*/
 .h4 { font-size: var(--font-size-h4); }
 .h5 { font-size: var(--font-size-h5); }
 .h6 { font-size: var(--font-size-h6); }
+
+/* 4 */
+:root {
+  --hr-border-with: var(--border-width-100);
+  --hr-border-color: rgba(0, 0, 0, 0.1);
+}
+
+hr {
+  margin-top: var(--spacer-y);
+  margin-bottom: var(--spacer-y);
+  border: 0;
+  border-top: var(--border-width-100);
+}
+
+/* 5 */
+small,
+.small {
+  font-size: 80%;
+  font-weight: normal;
+}
+
+/* 6 */
+mark,
+.mark {
+  padding: 0.2em;
+  background-color: var(--state-warning-background);
+}
