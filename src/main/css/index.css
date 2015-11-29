@@ -5,7 +5,7 @@
  * Copyright 2011-2015 Twitter, Inc.
  */
 
-/*! superfly-css-foundation | MIT License | https://github.com/superfly-css/superfly-css-colors/blob/master/LICENSE.md */
+/*! superfly-css-typography | MIT License | https://github.com/superfly-css/superfly-css-colors/blob/master/LICENSE.md */
 /*! bootstrap v4.0.0-alpha | MIT License | https://github.com/twbs/bootstrap/blob/master/LICENSE */
 
 /*
@@ -16,6 +16,7 @@
  1:  Import superfly-css-variables-sizes
  2:  Define module variables
  3:  Style heading elements and classes
+ 4:
 ================================
 */
 
