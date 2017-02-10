@@ -23,10 +23,10 @@
 */
 
 /* 0 */
-@import superfly-css-variables-colors;
+@import "superfly-css-variables-colors";
 
 /* 1 */
-@import superfly-css-variables-sizes;
+@import "superfly-css-variables-sizes";
 
 /* 2 */
 :root {
